@@ -1,0 +1,76 @@
+This is a file about tries and practice.
+
+##ow i am going to check "i" insert mode and shify+a to enter insert mode A
+#ttho check the difference.
+#AAt this point I didn't see the difference.
+#NNow clear it bring the cursor till the end of the line.
+#NNNNNNNNow clear it bring the cursor till the end of the line.
+#new_text clear it bring the cursor till the end of the line.
+#new_text clear it bring the cursor till the end of the line.
+#new_text clear it bring the cursor till the end of the line.
+#new_text clear it bring the cursor till the end of the line.
+
+ 
+Now i am going to check "i" insert mode and shify+a to enter insert mode A
+
+#w clear it bring the cursor till the end of the line.
+ho check the difference.
+NNNNNNow clear it bring the cursor till the end of the line.
+Now i'm going to check undo
+ow clear it bring the cursor till the end of the line.
+t this point I didn't see the difference.
+to print some thing: text text
+w clear it bring the cursor till the end of the line.
+
+to delete a cherecter press "x" in normal mode
+and "u" to undo changes`
+
+to delete entire row press dd
+
+this is the test line
+
+was executed normally
+
+ in normal mode you can move 
+-by hjkl letters h -<-
+l ->
+j-down, k-up
+
+now normal mode command mode
+
+normal mode and command mode
+esc-> :r filename to bring other file content here
+
+a test info
+jsdja
+sdasdjaslk
+sdnasjndla`
+
+done
+
+not to write here, but save the changes as a new file
+
+
+a test info
+jsdja
+sdasdjaslk
+sdnasjndla`
+
+
+find-and replace command
+to do tish go to command mode by esc :
+than press %s
+%s/find_text/new_text/g enter
+
+
+done
+
+to go to the beginning of the file
+
+gg
+
+to go to the end of the file
+
+G
+
+

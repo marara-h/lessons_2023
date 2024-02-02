@@ -1,0 +1,60 @@
+This is a file about tries and practice.
+
+
+Now i am going to check "i" insert mode and shify+a to enter insert mode A
+tho check the difference.
+At this point I didn't see the difference.
+Now clear it bring the cursor till the end of the line.
+
+
+Now i'm going to check undo
+
+to print some thing: text text
+
+to delete a cherecter press "x" in normal mode
+and "u" to undo changes`
+
+to delete entire row press dd
+
+this is the test line
+
+was executed normally
+
+ in normal mode you can move 
+-by hjkl letters h -<-
+l ->
+j-down, k-up
+
+now normal mode command mode
+
+normal mode and command mode
+esc-> :r filename to bring other file content here
+
+a test info
+jsdja
+sdasdjaslk
+sdnasjndla`
+
+done
+
+to save_as_ in the other file
+
+esc to enter in the normal mode :for commn mode update filenam
+
+esc+:update filename
+
+done
+
+type a linux comman without exiting vim
+
+esc -> :->! "command_name" 
+
+buffers, empty buffer, new buffer
+
+go to command mode
+
+esc :e filename
+
+
+
+

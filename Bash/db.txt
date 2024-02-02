@@ -1,0 +1,71 @@
+show databases;
+use `Lessonx`;
+
+
+create table `groups` (
+	`id` int unsigned not null auto_increment,
+	`name` varchar(255) not null,
+	primary key ( `id` )
+	)engine=innodb
+
+
+create table `user` (
+	`id` INT unsigned not null auto_increment,
+	`groupid` int unsigned not null,
+	`login` VARCHAR(255) not null,
+	`bday` DATE,
+	PRIMARY key ( `id` ),
+	Unique key ( `login` ),
+	key ( `bday` ),
+	Foreign key ( `groupid` ) references `groups`( `id` )
+	on update cascade
+	on delete cascade
+	) engine=innodb
+	
+INSERT into `groups` ( `name` ) values
+	( 'group1'),
+	( 'group2'),
+	( 'group3'),
+	( 'group4');
+
+insert into `user` ( `groupid`, `login`, `bday` )
+values ( 1, 'g1_user1', '1999-01-01'),	
+		( 1, 'g1_user2', '1999-01-02'),
+		( 1, 'g1_user3', '1999-01-03'),
+		( 2, 'g2_user1', '1999-02-01'),
+		( 2, 'g2_user2', '1999-02-02'),
+		( 2, 'g2_user3', '1999-02-03'),
+		( 3, 'g3_user1', '1999-03-01'),
+		( 3, 'g3_user2', '1999-03-02'),
+		( 3, 'g3_user3', '1999-03-03');
+
+	
+update `groups`  SET `id` = 999 WHERE  `id`=1;  
+
+DELETE  From `groups` WHERE `id` =999;
+
+
+-- insert into `user` ( `groupid`, `login`)
+-- 	values ( 999, 'user999');
+
+
+show keys from `user`;
+show create table `user`;
+alter table `user` drop constraint `user_ibfk_1`;
+-- alter table `user` engine=MyISAM;
+
+Rename table `user`  to `members`;
+alter table `members` RENAME `user`;
+
+Alter table `user` change `bday`  `birth_day` Date;
+
+ALTER table `user` modify `birth_day` date not null default '1995-07-07';
+
+
+Describe `user`;
+
+CREATE table `user_copy`
+( Select *From `user`);
+
+CREATE  table `users_part`
+(select `login`, `birth_day` FROM `user`);
